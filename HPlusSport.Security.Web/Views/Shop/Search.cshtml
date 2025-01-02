@@ -1,0 +1,16 @@
+﻿@using System.Web
+@{
+    ViewData["Title"] = "Search";
+}
+
+<header class="woocommerce-products-header">
+    <h1 class="woocommerce-products-header__title page-title">Search Result</h1>
+
+</header>
+<div class="storefront-sorting"><div class="woocommerce-notices-wrapper"></div></div>
+
+<div>Your search for @ViewData["SearchTerm"] yielded no results.</div>
+
+<script>
+    jQuery("h1.page-title").html('Search Result: @HttpUtility.JavaScriptStringEncode(ViewBag.SearchTerm)');
+</script>

@@ -1,0 +1,23 @@
+﻿@model IEnumerable<HPlusSport.Security.Web.Models.Category>
+@{
+    ViewData["Title"] = "Shop";
+}
+
+<header class="woocommerce-products-header">
+    <h1 class="woocommerce-products-header__title page-title">Shop</h1>
+
+</header>
+<div class="storefront-sorting"><div class="woocommerce-notices-wrapper"></div></div>
+<ul class="products columns-4">
+    @foreach (var category in Model)
+    {
+        <li class="product-category product">
+            <a href='@Url.Action("Category", new { @id = category.Id })'>
+                <img src="https://hplussport.com/wp-content/uploads/2016/12/slicker-jacket_LYNDA_29941.jpg" alt="@category.Name" width="324" height="324" srcset="https://hplussport.com/wp-content/uploads/2016/12/slicker-jacket_LYNDA_29941.jpg 900w, https://hplussport.com/wp-content/uploads/2016/12/slicker-jacket_LYNDA_29941-150x150.jpg 150w, https://hplussport.com/wp-content/uploads/2016/12/slicker-jacket_LYNDA_29941-300x300.jpg 300w, https://hplussport.com/wp-content/uploads/2016/12/slicker-jacket_LYNDA_29941-768x768.jpg 768w, https://hplussport.com/wp-content/uploads/2016/12/slicker-jacket_LYNDA_29941-500x500.jpg 500w, https://hplussport.com/wp-content/uploads/2016/12/slicker-jacket_LYNDA_29941-180x180.jpg 180w, https://hplussport.com/wp-content/uploads/2016/12/slicker-jacket_LYNDA_29941-600x600.jpg 600w" sizes="(max-width: 324px) 100vw, 324px" />
+                <h2 class="woocommerce-loop-category__title">
+                    @category.Name <mark class="count">(@category.Products.Count())</mark>
+                </h2>
+            </a>
+        </li>
+    }
+</ul>

@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "Logout";
+}
+
+<h2>Logout</h2>
+
+@using (Html.BeginForm("Logout", "Account", FormMethod.Post))
+{
+    <input type="submit" value="Logout" />
+}

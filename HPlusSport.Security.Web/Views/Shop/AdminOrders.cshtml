@@ -1,0 +1,28 @@
+﻿@model IEnumerable<HPlusSport.Security.Web.Models.Order>
+
+@{
+    ViewData["Title"] = "AdminOrders";
+}
+
+<h2>Admin: Orders</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.OrderDate)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.OrderDate)
+        </td>
+        <td>
+            @Html.ActionLink("Details", "AdminOrder", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35208.52
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HPlusSport.Security.Web", "HPlusSport.Security.Web\HPlusSport.Security.Web.csproj", "{C41CC5D6-2292-48E6-B8AE-BD07B7255A89}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HPlusSport.Security.API", "HPlusSport.Security.API\HPlusSport.Security.API.csproj", "{3A920658-C7E4-491D-A56B-62635F605C06}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C41CC5D6-2292-48E6-B8AE-BD07B7255A89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C41CC5D6-2292-48E6-B8AE-BD07B7255A89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C41CC5D6-2292-48E6-B8AE-BD07B7255A89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C41CC5D6-2292-48E6-B8AE-BD07B7255A89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A920658-C7E4-491D-A56B-62635F605C06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A920658-C7E4-491D-A56B-62635F605C06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A920658-C7E4-491D-A56B-62635F605C06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A920658-C7E4-491D-A56B-62635F605C06}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F61DBC64-B10D-4BB5-9BFD-134F9F1BE7E6}
+	EndGlobalSection
+EndGlobal

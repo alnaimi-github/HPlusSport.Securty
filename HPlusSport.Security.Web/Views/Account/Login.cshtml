@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+<h2>Login</h2>
+
+<div class="text-danger">@ViewData["Message"]</div>
+
+@using (Html.BeginForm("Login", "Account", FormMethod.Post))
+{
+    <div>Email: <input type="email" name="email" /></div>
+    <div>Password: <input type="password" name="password" /></div>
+    <div><input type="submit" value="Login" /></div>
+}
+
